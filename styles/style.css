@@ -42,6 +42,16 @@ ol {
   list-style: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  inline-size: 1px;
+  block-size: 1px;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
 /* Правила для основных повторяющихся компонентов */
 
 .search-form__fieldset {
@@ -127,6 +137,7 @@ ol {
 /* -- .RESULT -- */
 
 .result__video-container {
+  position: relative;
   margin-bottom: 16px;
   inline-size: 100%;
 }

@@ -11,10 +11,10 @@ html {
 }
 
 .page {
-  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
@@ -61,7 +61,7 @@ ol {
 .search-form__fieldset-title {
   padding-block-end: 5px;
   color: #fff;
-  font-family: 'Fira Sans Condensed';
+  font-family: "Fira Sans Condensed";
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
@@ -129,7 +129,6 @@ ol {
 .content {
   display: grid;
   grid-template-columns: 711px 399px;
-  justify-content: center;
   align-items: end;
   gap: 30px;
 }
@@ -140,18 +139,19 @@ ol {
   position: relative;
   margin-bottom: 16px;
   inline-size: 100%;
+  block-size: 386px;
 }
 
 .result__video {
+  object-fit: cover;
+  object-position: center;
   inline-size: 100%;
   block-size: 100%;
-  object-fit: cover;
 }
 
 .search-form {
   display: flex;
   justify-content: space-between;
-  align-items: start;
 }
 
 .search-form__textfield {
@@ -162,8 +162,8 @@ ol {
   font-family: inherit;
   font-size: inherit;
   background-color: transparent;
-  min-inline-size: 225px;
   appearance: none;
+  min-inline-size: 225px;
 }
 
 .search-form__textfield:focus {
@@ -184,11 +184,13 @@ ol {
   gap: 15px;
 }
 
-.search-form__checkbox-list .search-form__label:active{
+.search-form__checkbox-list .search-form__label:active {
   border: none;
 }
 
-.search-form__checkbox-list .search-form__label:active .search-form__label-text{
+.search-form__checkbox-list
+  .search-form__label:active
+  .search-form__label-text {
   border: none;
   text-decoration: none;
 }
@@ -203,26 +205,25 @@ ol {
 input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
   content: "";
   display: block;
-  block-size: 15px;
-  inline-size: 15px;
   margin: 1px;
   background-color: #fff;
+  block-size: 15px;
+  inline-size: 15px;
 
   /* Как альтернатива:
   content: "";
   position: absolute;
   inset: 2px;
   background-color: #fff; */
-  
 }
 
 input[type="checkbox"]:active + .search-form__pseudo-checkbox::after {
   content: "";
   display: block;
-  block-size: 15px;
-  inline-size: 15px;
   margin: 1px;
   background-color: #fff;
+  block-size: 15px;
+  inline-size: 15px;
 }
 
 .search-form__submit-button {
@@ -301,7 +302,7 @@ input[type="checkbox"]:active + .search-form__pseudo-checkbox::after {
 
 .content__video-card-description-container {
   flex-grow: 1;
-  max-inline-size: 200px;
+  flex-basis: 200px;
 }
 
 .content__video-card-title {
@@ -321,6 +322,7 @@ input[type="checkbox"]:active + .search-form__pseudo-checkbox::after {
 
 .content__video-card-thumbnail {
   object-fit: cover;
+  object-position: center;
   inline-size: 194px;
   block-size: 103px;
 }

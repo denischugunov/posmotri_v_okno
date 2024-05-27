@@ -61,7 +61,7 @@ ol {
 .search-form__fieldset-title {
   padding-block-end: 5px;
   color: #fff;
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
@@ -95,7 +95,7 @@ ol {
 .button {
   border: 1px solid #fff;
   color: #fff;
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 700;
   font-size: 18px;
   font-style: normal;
@@ -161,7 +161,7 @@ ol {
   color: inherit;
   font-family: inherit;
   font-size: inherit;
-  background-color: transparent;
+  background-color: inherit;
   appearance: none;
   min-inline-size: 225px;
 }
@@ -171,12 +171,7 @@ ol {
 }
 
 .search-form__textfield::placeholder {
-  color: rgba(255, 255, 255 / 0.7);
-  font-family: "Fira Sans Condensed";
-  font-weight: 400;
-  font-size: 18px;
-  font-style: normal;
-  line-height: 22px;
+  color: rgba(255 255 255 / 0.7);
 }
 
 .search-form__checkbox-list {
@@ -202,7 +197,7 @@ ol {
   block-size: 19px;
 }
 
-input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   content: "";
   display: block;
   margin: 1px;
@@ -217,7 +212,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
   background-color: #fff; */
 }
 
-input[type="checkbox"]:active + .search-form__pseudo-checkbox::after {
+.search-form__checkbox:active + .search-form__pseudo-checkbox::after {
   content: "";
   display: block;
   margin: 1px;
@@ -241,7 +236,7 @@ input[type="checkbox"]:active + .search-form__pseudo-checkbox::after {
 }
 
 .title {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 75px;
   line-height: 94%;
@@ -256,7 +251,6 @@ input[type="checkbox"]:active + .search-form__pseudo-checkbox::after {
   position: relative;
   overflow-x: hidden;
   overflow-y: auto;
-  scrollbar-width: none;
   max-block-size: 298px;
 }
 
@@ -308,7 +302,7 @@ input[type="checkbox"]:active + .search-form__pseudo-checkbox::after {
 .content__video-card-title {
   overflow: hidden;
   color: #fff;
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-size: 30px;
   line-height: 100%;
   text-transform: uppercase;
